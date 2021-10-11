@@ -5,10 +5,10 @@ const closeBurgerMenu = document.querySelector(".close")
 
 btnHamburger.addEventListener("click", function () {
     btnHamburger.style.display = "none";
-    hamburgerMenu.style.display = "inline-block"
+    hamburgerMenu.classList.add("active")
 });
 
 closeBurgerMenu.addEventListener("click", function() {
-    hamburgerMenu.style.display = "none"
+    hamburgerMenu.classList.remove("active")
     btnHamburger.style.display = "block"
 });
